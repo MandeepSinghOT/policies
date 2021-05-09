@@ -1,22 +1,85 @@
-<html>
+<doctype html>
+<title> Dick's Sporting Goods Survey  </title>
 
-  <!-- Language Drop-down elements that will control in which language notice is displayed -->
-  <div class="otnotice-language-dropdown-container">
-    <select id="otnotice-language-dropdown" aria-label="language selector"></select>
-  </div>
+<h1> Dick's Sporting Goods Survey </h1>
 
-  <div id="otnotice-216e1f39-c7d3-4f6e-be7a-87511a9627ae" class="otnotice"></div>
-  
-  <script src="https://lkgb-portal-cdn.1trust.app/privacy-notice-scripts/otnotice-1.0.min.js" type="text/javascript" charset="UTF-8" id="otprivacy-notice-script">
-      settings="eyJjYWxsYmFja1VybCI6Imh0dHBzOi8vbGtnYi1wb3J0YWwuMXRydXN0LmFwcC9yZXF1ZXN0L3YxL3ByaXZhY3lOb3RpY2VzL3N0YXRzL3ZpZXdzIn0="
-    </script>
-  
-  <script type="text/javascript" charset="UTF-8">
-      // To ensure external settings are loaded, use the Initialized promise:
-      OneTrust.NoticeApi.Initialized.then(function() {
-        OneTrust.NoticeApi.LoadNotices(["https://lkgb-portal-cdn.1trust.app/4a78b69d-2416-4def-ba88-0d987f5c5b20/privacy-notices/216e1f39-c7d3-4f6e-be7a-87511a9627ae.json"]);
-      });
-    </script>
-    
-  <!-- OneTrust Privacy Notice end -->
-</html>
+<form>
+
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname">
+
+<br>
+<br>
+
+<p>What's your favorite sport?</p>
+  <input type="radio" id="Soccer" name="Soccer" value="Soccer">
+  <label for="Soccer">Soccer</label><br>
+  <input type="radio" id="Basketball" name="Basketball" value="Basketball">
+  <label for="Basketball">Basketball</label><br>
+  <input type="radio" id="Baseball" name="Baseball" value="Baseball">
+  <label for="Baseball">Baseball</label><br>
+  <input type="radio" id="other" name="Football" value="Football">
+  <label for="Football">Football</label><br>
+  <input type="radio" id="Golf" name="Golf" value="Golf">
+  <label for="Golf">Golf</label>
+
+<br>
+<br>
+
+<p> If you have been to Dick's Sporting Good, which of the following have you bought based on the choices below: </p>
+  <input type="checkbox" id="Soccer Equipment" name="Soccer Equipment" value="Soccer Equipment">
+  <label for="Soccer Equipment"> Soccer Equipment </label><br>
+  <input type="checkbox" id="Basketball Equipment" name="Basketball Equipment" value="Basketball Equipment">
+  <label for="Basketball Equipment"> Basketball Equipment </label><br>
+  <input type="checkbox" id="Baseball Equipment" name="Baseball Equipment" value="Baseball Equipment">
+  <label for="Baseball Equipment"> Baseball Equipment </label><br>
+  <input type="checkbox" id="Golf Equipment" name="Golf Equipment" value="Golf Equipment">
+  <label for="Golf Equipment"> Golf Equipment </label><br>
+  <input type="checkbox" id="Have Never Shopped Here" name="Have Never Shopped Here" value="Have Never Shopped Here">
+  <label for="Have Never Shopped Here"> Have Never Shopped Here </label>
+ <br>
+ <br>
+
+<p> What's your favorite brand? </p>
+
+<label for="Favorite Brand"> Favorite Brand:</label>
+  <select name="Brands" id="Brands">
+    <option value="Nike">Nike</option>
+    <option value="Jordan">Jordan</option>
+    <option value="Adidas">Adidas</option>
+    <option value="Under Armor">Under Armor</option>
+	<option value="None of Them"> None</option>
+  </select>
+  <br><br>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<input type="submit" value="Submit">
+
+<br>
+<br>
+
+<button onclick="history.go(-1)">Return to Previous Page</button>
+
+<script>
+function  goBack(evt) {
+// Check to see if override is needed here
+
+// If no override needed, call history.back()
+window.history.back();
+
+}
+</script>
+
+</form>
+
+
